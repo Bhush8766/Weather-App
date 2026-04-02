@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#5f2c82,#49a09d);
+}
+
+.app{
+    width:350px;
+    height:650px;
+    border-radius:30px;
+    overflow:hidden;
+    position:relative;
+    background:linear-gradient(180deg,#1f2c5c,#8e44ad);
+    color:white;
+}
+
+/* Screens */
+.screen{
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding:25px;
+    transition:0.5s;
+}
+
+.hidden{
+    transform:translateX(100%);
+}
+
+/* ------------------ SCREEN 1 ------------------ */
+.start{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.logo{
+    font-size:60px;
+    color:#f1c40f;
+    margin-bottom:10px;
+}
+
+.start h1{
+    font-size:34px;
+}
+
+.start span{
+    color:#f1c40f;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:#f1c40f;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* ------------------ SCREEN 2 ------------------ */
+.search{
+    text-align:center;
+    margin-top:100px;
+}
+
+/* Search Box like your image */
+.search-box{
+    display:flex;
+    align-items:center;
+    background:rgba(255,255,255,0.15);
+    border-radius:30px;
+    padding:10px 15px;
+    backdrop-filter: blur(10px);
+}
+
+.search-box i{
+    margin-right:10px;
+    color:#f1c40f;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    background:transparent;
+    color:white;
+    width:100%;
+}
+
+/* ------------------ SCREEN 3 ------------------ */
+.weather{
+    text-align:center;
+}
+
+.temp{
+    font-size:70px;
+    font-weight:bold;
+}
+
+#weatherIcon{
+    font-size:60px;
+    margin-top:10px;
+    color:#f1c40f;
+}
+
+.glass-card{
+    margin-top:15px;
+    padding:15px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.forecast{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+.day{
+    background:rgba(255,255,255,0.1);
+    padding:10px;
+    border-radius:15px;
+    width:60px;
+}
+
+.info-grid{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.info-box{
+    flex:1;
+    background:rgba(255,255,255,0.1);
+    padding:15px;
+    border-radius:15px;
+}
